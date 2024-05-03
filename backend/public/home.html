@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../style.css">
+
+<style>
+
+    table{
+        width:30%;
+        border-collapse: collapse;
+        border-bottom: solid 2px;
+        border-left: solid 2px;
+    }
+
+    th{
+        height: 50px;
+        background-color: peachpuff;
+    }
+
+    tr:nth-child(even){
+        background-color: peru;
+    }
+
+    figcaption{
+        font-style: oblique;
+    }
+
+    .location{
+        text-align: center;
+    }
+
+    input, textarea, select{
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    #pictures img{
+        width: 400px;
+        height: 300px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>The Sweet Spot Cafeteria</h1>
+        <nav>
+            <ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Dinner</li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="topnav">
+    <a href="../about.html">About</a> <!-- Find out if you can do a drop down and add "careers." Apply the same for the menu types under "Homepage."-->
+    <a href="../home.html" class="active">Homepage</a>
+    <a href="../menu.html">Menus</a>
+    <a href="../order.html">Order</a>
+</div>
+<hr>
+
+    <section id="info">
+    <h2>General Information</h2>
+        <!--When founded, purpose of cafeteria, style of cafeteria (ex: buffet)-->
+    <p>
+        The Sweet Spot Cafeteria opened in Fall 2024 on the University of Houston Sugar Land Campus.
+        The Sweet Spot is open to all UH students, faculty, and staff. Guests are allowed to be served with a slight upcharge.
+        The Sweet Spot is a fast casual establishment that sereves customers hot and fresh premade meals with influence from various cultural cuisines.
+    </p>
+
+    </section>
+    <br>
+
+    <div class="tables">
+        <!--Open weedays, decide weekend times, mention holiday times-->
+        <!--Maybe include a table?-->
+    
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Fall & Spring Semester Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Day</th>
+            <th>Open</th>
+            <th>Close</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Sunday</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Monday-Thursday</td>
+            <td>8:00AM</td>
+            <td>6:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Friday</td>
+            <td>8:00AM</td>
+            <td>5:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Saturday</td>
+            <td>8:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+    </table>
+
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Summer Semester Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Day</th>
+            <th>Open</th>
+            <th>Close</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Sunday & Saturday</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Monday-Friday</td>
+            <td>8:00AM</td>
+            <td>5:00PM</td>
+        </tr>
+    </table>
+
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Holiday Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Holiday</th>
+            <th>Open</th>
+            <th>Close</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Labor Day</td>
+            <td>8:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Thanksgiving Break</td>
+            <td>8:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Christmas Break</td>
+            <td>8:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Spring Break</td>
+            <td>8:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Juneteenth</td>
+            <td>Closed</td>
+            <td>Closed</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Independence Day</td>
+            <td>8:00AM</td>
+            <td>5:00PM</td>
+        </tr>
+    </table>
+    </section>
+    <br>
+    <br>
+
+    <div id="pictures" style="background-color: lightslategray; border-width: 20px; border: solid; text-align: center;" >
+    <h2 style="text-align: center;">Sample Dishes!</h2>
+
+        <section id="breakfast" style="display: inline-block; margin-right: 300px; background-color: antiquewhite; border: solid; border-color: white; border-width: 5px;">
+        <h3>Breakfast</h3>
+        <figure>
+        <img src="../Nigerian_Break.jpg" alt="Breakfast">
+        <figcaption>Nigerian Breakfast Bowl</figcaption>
+        </figure>
+    </section>
+
+    <section id="lunch" style="display: inline-block; background-color: antiquewhite; border: solid; border-color: white; border-width: 5px;">
+        <h3>Lunch</h3>
+        <figure>
+        <img src="../Korean_Lun.jpg" alt="Lunch">
+        <figcaption>Korean Lunch Box</figcaption>
+        </figure>
+    </section>
+    
+    <section id="dinner" style="display: inline-block; margin-left: 300px; background-color: antiquewhite; border: solid; border-color: white; border-width: 5px;">
+        <h3>Dinner</h3>
+        <figure>
+        <img src="../Mexican_Din.jpg" alt="Dinner">
+        <figcaption>Mexican Dinner Plate</figcaption>
+        </figure>
+    </section>
+    </div>
+    <br>
+
+    <section class="location">
+        <!--Where is the cafeteria located-->
+        <h2 style="background-color: palevioletred; margin: 10px; color: white; border: solid;">Location</h2>
+        <figure>
+            <img src="../Concept_1.jpg" alt="Cafeteria" id="cafe" style="width: 800px; border: solid;">
+            <figcaption>The Sweet Spot Cafeteria is exculsively located on the University of Houston Sugar Land Campus!</figcaption>
+        </figure>
+    </section>
+
+    
+    <footer>
+        <!--Contact info & click for dropdown feedback form-->
+    <div class="contact-info">
+        <h2>Contact Us!</h2>
+        <p>713-743-1212</p>
+        <p>sweetspot_sl@uh.edu</p>
+    </div>
+
+    <div class="feedback" style="text-align: left;">
+        <h2>Feedback Form!</h2>
+        <details>
+            <summary>Complete this small survey!</summary>
+            <br>
+        <form id="form">
+            <label>Name</label>
+            <input type="text" id ="name" placeholder="First & Last Name" required>
+            
+            <label>E-mail</label>
+            <input type="text" id ="email" placeholder="Email" required>
+
+            <p>On a scale of 1-5, how much do you enjoy the website?</p>
+            <div class="radio-group">
+                <input type="radio" id="one_star" value="1" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775</label>
+                <br>
+
+                <input type="radio" id="two_star" value="2" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="three_star" value="3" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="four_star" value="4" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="five_star" value="5" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775 &#127775</label><br>
+
+            <br>
+
+            <div class="textarea-group">
+                <label>What do you like about the website?</label>
+                <br>
+                <textarea name="good_input" id="positive_feed" cols="25" rows="3"></textarea>
+            
+                <br>
+                <label>What can I do to improve the website?</label>
+                <br>
+                <textarea name="good_input" id="const_feed" cols="25" rows="3" ></textarea>
+            
+                <br>
+            </div>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+        </details>
+    </div>
+    </footer>
+
+    <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault() // prevent form autosubmitting
+        
+        var name = document.getElementById('name').value
+
+        console.log(name)
+
+        var email = document.getElementById('email').value
+
+        console.log(email)
+
+        var star = document.querySelector('input[name="stars"]:checked').value
+
+        console.log(star)
+
+        var positive = document.getElementById('positive_feed').value
+
+        console.log(positive)
+
+        var negative = document.getElementById('const_feed').value
+
+        console.log(negative)
+    })
+
+    </script>
+
+</body>
+</html>

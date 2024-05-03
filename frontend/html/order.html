@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="/cis2336-assignment4-UHdatrotte/frontend/css/style.css">
+    <link rel="stylesheet" href="/cis2336-assignment4-UHdatrotte/frontend/css/order.css">
+
+    <style>
+
+    </style>
+</head>
+
+
+    <body>
+        <header>
+            <h1>The Sweet Spot Cafeteria</h1>
+            <nav>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="topnav">
+        <a href="/cis2336-assignment4-UHdatrotte/frontend/html/about.html">About</a> <!-- Find out if you can do a drop down and add "careers." Apply the same for the menu types under "Homepage."-->
+        <a href="/cis2336-assignment4-UHdatrotte/frontend/html/home.html">Homepage</a>
+        <a href="/cis2336-assignment4-UHdatrotte/frontend/html/menu.html">Menus</a>
+        <a href="/cis2336-assignment4-UHdatrotte/frontend/html/order.html" class="active">Order</a>
+    </div>
+    <hr>
+
+    <section>
+
+        <div class="container">
+            <header id="order" style="border: solid; border-color: black; font-size: 20px;">
+                <h1>Your Cart</h1>
+                <div class="shopping">
+                    <img src="/cis2336-assignment4-UHdatrotte/frontend/images/cart.png">
+                    <span class="quantity">0</span>
+                </div>
+            </header>
+            <div class="list"></div>
+        </div>
+        <div class="cart">
+            <h1>Your Cart</h1>
+            <hr>
+            <ul class="listCart"></ul>
+            <div class="checkOut">
+                <div class="total"></div>
+                <div class="closeShopping">Close</div>
+                <div class="button"><button type="submit" style="border: solid;">Submit</button></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/cis2336-assignment4-UHdatrotte/frontend/javascript/shop.js"></script>
+    <footer>
+        <!--Contact info & click for dropdown feedback form-->
+    <div class="contact-info">
+        <h2>Contact Us!</h2>
+        <p>713-743-1212</p>
+        <p>sweetspot_sl@uh.edu</p>
+    </div>
+
+    <div class="feedback" style="text-align: left;">
+        <h2>Feedback Form!</h2>
+        <details>
+            <summary>Complete this small survey!</summary>
+            <br>
+        <form id="form">
+            <label>Name</label>
+            <input type="text" id ="name" placeholder="First & Last Name" required>
+            
+            <label>E-mail</label>
+            <input type="text" id ="email" placeholder="Email" required>
+
+            <p>On a scale of 1-5, how much do you enjoy the website?</p>
+            <div class="radio-group">
+                <input type="radio" id="one_star" value="1" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775</label>
+                <br>
+
+                <input type="radio" id="two_star" value="2" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="three_star" value="3" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="four_star" value="4" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="five_star" value="5" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775 &#127775</label><br>
+
+            <br>
+
+            <div class="textarea-group">
+                <label>What do you like about the website?</label>
+                <br>
+                <textarea name="good_input" id="positive_feed" cols="25" rows="3"></textarea>
+            
+                <br>
+                <label>What can I do to improve the website?</label>
+                <br>
+                <textarea name="good_input" id="const_feed" cols="25" rows="3" ></textarea>
+            
+                <br>
+            </div>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+        </details>
+    </div>
+    </footer>
+
+    <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault() // prevent form autosubmitting
+        
+        var name = document.getElementById('name').value
+
+        console.log(name)
+
+        var email = document.getElementById('email').value
+
+        console.log(email)
+
+        var star = document.querySelector('input[name="stars"]:checked').value
+
+        console.log(star)
+
+        var positive = document.getElementById('positive_feed').value
+
+        console.log(positive)
+
+        var negative = document.getElementById('const_feed').value
+
+        console.log(negative)
+    })
+    </script>
+</body>
+</html>

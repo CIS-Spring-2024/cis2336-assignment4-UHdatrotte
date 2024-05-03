@@ -1,0 +1,77 @@
+/* External CSS For Sweet Spot Cafeteria */
+
+* {
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: palevioletred;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-style: oblique;
+    padding-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+section {
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 275px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: palevioletred;
+    color: #fff;
+}
+
+.topnav {
+    background-color: peachpuff;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float:left;
+    color: rgb(215, 53, 53);
+    text-decoration:none;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: 1000;
+}
+
+/*Insert hover styling*/
+.topnav a:hover {
+    background-color: darksalmon;
+    color: #fff;
+}
+
+.topnav a.active{
+    background-color: lemonchiffon;
+}

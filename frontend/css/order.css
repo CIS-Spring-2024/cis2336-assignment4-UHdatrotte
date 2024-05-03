@@ -1,0 +1,172 @@
+section{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#order{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+
+#order .shopping{
+    position: relative;
+    text-align: right;
+    right: 50%;
+    cursor: pointer;
+}
+
+#order .shopping img {
+    width: 40px;
+}
+
+#order .shopping span{
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.cart h1{
+    color: palevioletred;
+    font-weight: 600;
+    font-size: 35px;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.cart .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cart .checkOut div{
+    background-color: palevioletred;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart .checkOut div:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+.cart .checkOut div:nth-child(3){
+    background-color: #453E3B;
+    color: white;
+    margin-left: 120px;
+}
+
+.active .cart{
+    left: calc(100% - 500px);
+}
+
+.active .container{
+    transform:translateX(-200px)
+}
+
+.list .item{
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 20px;
+    box-shadow: 0 50px 50px palevioletred;
+    border: solid;
+}
+
+.list .item img{
+    width: 500px;
+    height: 250px;
+    border: solid;
+    border-color: white;
+}
+
+.list .item .title{
+    font-weight: 600;
+}
+
+.list .item .price{
+    margin: 10px;
+}
+
+.list .item button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.listCart li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: white;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.listCart li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCart li img{
+    width: 150px;
+    height: 80px;
+    border: solid;
+    border-color: white;
+}
+
+.listCart button{
+    width: 30px;
+    background-color: white;
+    border: solid;
+    cursor: pointer;
+}
+
+.listCart .count{
+    margin: 0 10px;
+}
+
+button {
+    font-size: 30px;
+}

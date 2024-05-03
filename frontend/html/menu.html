@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/cis2336-assignment4-UHdatrotte/frontend/css/style.css">
+
+    <style>
+
+        img {
+            border: solid;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: 235px;
+        }
+
+        .menus {
+            width: 100%;
+            height: 1230px;
+            background-color: lightslategrey;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border: solid;
+        }
+
+        .navlinks {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .navlinks li a,
+        .navlinks li h2
+        {
+            background-color: palevioletred;
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+            user-select: none;
+            border: solid;
+        }
+
+        .navlinks li a:hover,
+        .navlinks li h2:hover
+        {
+            color: peachpuff;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdownItems {
+            position:relative;
+            top: 50px;
+            right: 0;
+            background-color: #fff;
+            width: 300px;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            list-style: none;
+            border: solid;
+        }
+        .dropdownItems.active {
+            display: flex;
+        }
+
+        .dropdownItems li {
+            padding: 10px;
+            width: 290px;
+            height: 100%;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .dropdownItems li:hover{
+            background-color: palevioletred;
+            color: white;
+            
+        }
+
+        table{
+        width:30%;
+        border-collapse: collapse;
+        border-bottom: solid 2px;
+        border-left: solid 2px;
+        }
+
+        th{
+            height: 50px;
+            background-color: peachpuff;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: peru;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>The Sweet Spot Cafeteria</h1>
+        <nav>
+            <ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Dinner</li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="topnav">
+    <a href="/cis2336-assignment4-UHdatrotte/frontend/html/about.html">About</a> <!-- Find out if you can do a drop down and add "careers." Apply the same for the menu types under "Homepage."-->
+    <a href="/cis2336-assignment4-UHdatrotte/frontend/html/home.html">Homepage</a>
+    <a href="/cis2336-assignment4-UHdatrotte/frontend/html/menu.html" class="active">Menus</a>
+    <a href="/cis2336-assignment4-UHdatrotte/frontend/html/order.html">Order</a>
+</div>
+<hr>
+
+<h2 style="text-align: center;">General Menu Information</h2>
+<p style="text-align: center;">
+    Our menus include a wide array of options from a variety of cuisines. Each meal includes an appetizer, main dish, and dessert. Each meal comes with a complimentary 24 <i>fl oz</i> cup that customers can use for a fountain drink of their choice.
+    Below the menus is the meal time schedule.
+</p>
+<p style="font-size: 14px;">&#127775 - Popular item!</p>
+<p style="text-align: center; font-style: italic; font-size: 25px; background-color: peachpuff;">Click each menu to view our options!</p>
+
+    <section class="menus">
+        <!--Breakfast Dropdown-->
+        <ul class="navlinks">
+            <li class="dropdown">
+                <h2 class="dropdownText" style="display: inline-block; margin-left: 175px; background-color: palevioletred; text-align: center;">Breakfast Menu</h2>
+                <ul class="dropdownItems" style="margin-left: 175px;">
+                    <li>
+                        &#127775<b>Nigerian Breakfast Bowl</b> - <i>Plantains, Eggs w/ Cheese & Veggies(scrambled, omelette, etc.), Puff-Puff </i>
+                        <p></p>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Nigerian_Break.jpg">
+                    </li>
+                    <br>
+                    <li>
+                        <b>The American Starter</b> - <i>Bagel w/ Creamcheese, Oatmeal, Toaster Strudel</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Oatmeal.jpg">
+                    </li>
+                    <br>
+                    <li>
+                        <b>The Sweet Spot Classic</b> - <i>Scrambled Eggs, Pancakes, Chocolate Strawberries</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Pancakes.jpg">
+                    </li>
+                </ul>
+            </li>
+            <!--Lunch Dropdown-->
+            <li class="dropdown">
+                <h2 class="dropdownText" style="display: inline-block; margin-left: 450px; background-color: palevioletred; text-align: center;">Lunch Menu</h2>
+                <ul class="dropdownItems" style="margin-left: 450px;">
+                    <li>
+                        &#127775<b>Korean Lunch Box</b> - <i>Fermented Vegetables, Korean Fried Chicken, Shaved Ice</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Korean_Lun.jpg">
+                    </li>
+                    <br>
+                    <li>
+                        <b>Big Ben's Special</b> - <i>Beans, Fish & Chips, Sugar Cookie</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Fish_Chips.JPG">
+                    </li>
+                    <br>
+                    <li>
+                        <b>Bahamian Crawfish</b> - <i>Rice & Peas, Boiled Crawfish, Guava Pudding</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Crawfish.jpg">
+                    </li>
+                </ul>
+            </li>
+            <!--Dinner Dropdown-->
+            <li class="dropdown">
+                <h2 class="dropdownText" style="display: inline-block; margin-left: 500px; background-color: palevioletred; text-align: center;">Dinner Menu</h2>
+                <ul class="dropdownItems" style="margin-left: 500px;">
+                    <li>
+                        &#127775<b>Mexican Dinner Plate</b> - <i>Mexican Rice, Tacos, Churros</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Mexican_Din.jpg">
+                    </li>
+                    <br>
+                    <li>
+                        <b>Curry Chicken</b> - <i>Naan Bread, Curry Chicken w/ Rice, Ice Pop</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Curry.jpg">
+                    </li>
+                    <br>
+                    <li>
+                        <b>Ichiraku Ramen</b> - <i>Dumplings, Beef Ramen, Cheesecake</i>
+                        <img src="/cis2336-assignment4-UHdatrotte/frontend/images/Ramen.jpg">
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+
+    <!--The tables display the Meal Schedules-->
+
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Breakfast Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Day</th>
+            <th>Starts</th>
+            <th>Ends</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Monday-Thursday</td>
+            <td>8:00AM</td>
+            <td>12:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Friday</td>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Saturday</td>
+            <td>8:00AM</td>
+            <td>11:00AM</td>
+        </tr>
+    </table>
+
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Lunch Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Day</th>
+            <th>Starts</th>
+            <th>Ends</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Monday-Thursday</td>
+            <td>12:00PM</td>
+            <td>3:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Friday</td>
+            <td>11:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Saturday</td>
+            <td>11:00AM</td>
+            <td>2:00PM</td>
+        </tr>
+    </table>
+
+    <table style="display: inline-table;">
+        <tr>
+            <th style="border: solid 2px;">Dinner Schedule</th>
+        </tr>
+
+        <tr style="border-top: solid 2px; border-right: solid 2px;">
+            <th>Day</th>
+            <th>Starts</th>
+            <th>Ends</th>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Monday-Thursday</td>
+            <td>3:00PM</td>
+            <td>6:00PM</td>
+        </tr>
+
+        <tr style="border-right: solid 2px;">
+            <td>Friday</td>
+            <td>2:00PM</td>
+            <td>5:00PM</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <!--Contact info & click for dropdown feedback form-->
+    <div class="contact-info">
+        <h2>Contact Us!</h2>
+        <p>713-743-1212</p>
+        <p>sweetspot_sl@uh.edu</p>
+    </div>
+
+    <div class="feedback" style="text-align: left;">
+        <h2>Feedback Form!</h2>
+        <details>
+            <summary>Complete this small survey!</summary>
+            <br>
+        <form id="form">
+            <label>Name</label>
+            <input type="text" id ="name" placeholder="First & Last Name" required>
+            
+            <label>E-mail</label>
+            <input type="text" id ="email" placeholder="Email" required>
+
+            <p>On a scale of 1-5, how much do you enjoy the website?</p>
+            <div class="radio-group">
+                <input type="radio" id="one_star" value="1" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775</label>
+                <br>
+
+                <input type="radio" id="two_star" value="2" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="three_star" value="3" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="four_star" value="4" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="five_star" value="5" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775 &#127775</label><br>
+
+            <br>
+
+            <div class="textarea-group">
+                <label>What do you like about the website?</label>
+                <br>
+                <textarea name="good_input" id="positive_feed" cols="25" rows="3"></textarea>
+            
+                <br>
+                <label>What can I do to improve the website?</label>
+                <br>
+                <textarea name="good_input" id="const_feed" cols="25" rows="3" ></textarea>
+            
+                <br>
+            </div>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+        </details>
+    </div>
+    </footer>
+
+    <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault() // prevent form autosubmitting
+        
+        var name = document.getElementById('name').value
+
+        console.log(name)
+
+        var email = document.getElementById('email').value
+
+        console.log(email)
+
+        var star = document.querySelector('input[name="stars"]:checked').value
+
+        console.log(star)
+
+        var positive = document.getElementById('positive_feed').value
+
+        console.log(positive)
+
+        var negative = document.getElementById('const_feed').value
+
+        console.log(negative)
+    })
+
+    </script>
+
+    <script src="/cis2336-assignment4-UHdatrotte/frontend/javascript/drop.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        img {
+            border: solid;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>The Sweet Spot Cafeteria</h1>
+        <nav>
+            <ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Dinner</li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="topnav">
+    <a href="../about.html" class="active">About</a> <!-- Find out if you can do a drop down and add "careers." Apply the same for the menu types under "Homepage."-->
+    <a href="../home.html">Homepage</a>
+    <a href="../menu.html">Menus</a>
+    <a href="../order.html">Order</a>
+</div>
+<hr>
+
+    <section id="Headshot">
+        <h2>Owner Biography</h2>
+        <h1 style="font-style: oblique; text-align: center;">Desmond Trotter</h1>
+        <img src="../Myheadshot.jpeg" alt="headshot">
+
+        <br>
+
+        <h3>Who?</h3>
+        <div>
+            Desmond Trotter is a second year Computer Information Student at the University of Houston. The 19 year old 
+            entered university with over 70 credit hours and currently has over 100 credit hours.
+            Desmond founded The Sweet Spot Cafeteria during his the 2024 Spring Semester in his Web Development class.
+        </div>
+
+        <h3>Why was The Sweet Spot created?</h3>
+        <div>
+            Desmond created The Sweet Spot for UH students who need a convenient yet filling meal on the Sugar Land campus. 
+            The Sweet Spot also serves as hub for students to gather, relax, study, or even network between classes. 
+            Desmond's IT and Entrepreneurial background will assist hungry Sugar Land students. His Web Developing skills and 
+            Marketing experience will make students aware of The Sweet Spot.
+        </div>
+
+        <h3>Future Plans?</h3>
+        <div>
+            Once Desmond passes on The Sweet Spot to a new head manager, he plans to work a Data Analyst job after college. 
+            While it isn't Desmond's passion to be a Data Analyst, he hopes to explore various avenues within the CIS degree.
+            He hopes to apply his new skills and experience to his family's IT Consulting company in the distant future.
+        </div>
+        <br>
+        <p><i>Biography Created March 2024</i></p>
+
+    </section>
+
+
+
+    <footer>
+        <!--Contact info & click for dropdown feedback form-->
+    <div class="contact-info">
+        <h2>Contact Us!</h2>
+        <p>713-743-1212</p>
+        <p>sweetspot_sl@uh.edu</p>
+    </div>
+
+    <div class="feedback" style="text-align: left;">
+        <h2>Feedback Form!</h2>
+        <details>
+            <summary>Complete this small survey!</summary>
+            <br>
+        <form id="form">
+            <label>Name</label>
+            <input type="text" id ="name" placeholder="First & Last Name" required>
+            
+            <label>E-mail</label>
+            <input type="text" id ="email" placeholder="Email" required>
+
+            <p>On a scale of 1-5, how much do you enjoy the website?</p>
+            <div class="radio-group">
+                <input type="radio" id="one_star" value="1" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775</label>
+                <br>
+
+                <input type="radio" id="two_star" value="2" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="three_star" value="3" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="four_star" value="4" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775</label>
+                <br>
+
+                <input type="radio" id="five_star" value="5" name="stars">
+                <!--Maybe include a mini star image for the labels?-->
+                <label>&#127775 &#127775 &#127775 &#127775 &#127775</label><br>
+
+            <br>
+
+            <div class="textarea-group">
+                <label>What do you like about the website?</label>
+                <br>
+                <textarea name="good_input" id="positive_feed" cols="25" rows="3"></textarea>
+            
+                <br>
+                <label>What can I do to improve the website?</label>
+                <br>
+                <textarea name="good_input" id="const_feed" cols="25" rows="3" ></textarea>
+            
+                <br>
+            </div>
+
+            <input type="submit" value="Submit">
+        
+        </form>
+        </details>
+    </div>
+    </footer>
+
+    <script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit',function(event){
+        event.preventDefault() // prevent form autosubmitting
+        
+        var name = document.getElementById('name').value
+
+        console.log(name)
+
+        var email = document.getElementById('email').value
+
+        console.log(email)
+
+        var star = document.querySelector('input[name="stars"]:checked').value
+
+        console.log(star)
+
+        var positive = document.getElementById('positive_feed').value
+
+        console.log(positive)
+
+        var negative = document.getElementById('const_feed').value
+
+        console.log(negative)
+    })
+
+    </script>
+</body>
+</html>
